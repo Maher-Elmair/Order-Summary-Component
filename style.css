@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+    line-height: 1.2;
+}
+
+:root {
+    background-color: rgb(224, 232, 255);
+}
+
+.background {
+    position: absolute;
+    top: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*small*/
+@media (min-width: 577px) {
+    .container {
+        width: 550px;
+    }
+}
+
+/* tablet */
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+/* Medium */
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+/* desktop  */
+@media (min-width: 1300px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+.desktop {
+    width: 100%;
+}
+
+.card {
+    width: 400px;
+    overflow: hidden;
+    margin: auto;
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 7px 14px 1px rgb(176 184 201);
+    position: relative;
+    top: 5rem;
+}
+
+.card:hover {
+    box-shadow: 0 0 3px 1px rgb(118, 108, 241);
+}
+
+.one {
+    color: rgb(34, 47, 88);
+    font-size: 25px;
+    font-weight: 900;
+    padding: 50px 0px 20px 0px;
+    text-transform: capitalize;
+}
+
+.two {
+    font-size: 16px;
+    font-weight: 500;
+    padding: 0px 30px 20px 30px;
+    color: hsl(224, 23%, 55%);
+}
+
+.two::first-letter {
+    text-transform: uppercase;
+}
+
+.line {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(248, 249, 254);
+    border-radius: 10px;
+    padding: 12px 0px;
+    margin: 0px 40px 20px 40px;
+    text-transform: capitalize;
+    font-weight: 700;
+}
+
+.left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.there {
+    color: rgb(34, 47, 88);
+    line-height: 1.5;
+}
+
+.four {
+    color: hsl(224, 23%, 55%);
+    text-transform: none;
+    font-weight: 500;
+}
+
+.link {
+    font-size: 14px;
+    color: rgb(56, 42, 225);
+}
+
+.link:hover {
+    text-decoration: none;
+    color: rgb(118, 108, 241);
+}
+
+button {
+    border: none;
+    background-color: rgb(56, 42, 225);
+    color: white;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 12px;
+    width: 86%;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0px 7px 14px 1px rgb(117 107 255);
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.end {
+    color: hsl(224, 23%, 55%);
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin: 20px 0px 40px 0px;
+}
+
+.end:hover {
+    color: rgb(34, 47, 88);
+    cursor: pointer;
+}
+
+@media only screen and (max-width:440px) {
+    .card {
+        width: 340px;
+        top: 4rem;
+    }
+
+    .line {
+        margin: 0px 18px 20px 18px;
+    }
+}
+
+/*! start Attribution */
+.attribution {
+    position: relative;
+    top: 12rem;
+    color: #8aa1c0;
+    font-size: 16px;
+    font-weight: 800;
+    margin: auto;
+}
+
+.attribution a {
+    font-size: smaller;
+    text-decoration: none;
+    color: rgb(56, 42, 225);
+    text-transform: capitalize;
+    white-space: nowrap;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.attribution a:hover::after {
+    font-family: "Font Awesome 6 Free";
+    font-weight: 600;
+    content: "\f0a9";
+    font-size: 14px;
+    padding: 0 8px;
+}
+
+@media (max-width: 440px) {
+    .attribution {
+        position: relative;
+        top: 5rem;
+        white-space: break-spaces;
+        line-height: 2;
+        left: 0;
+        width: -webkit-fill-available;
+    }
+}
+
+/*! end Attribution */
+@media only screen and (max-width:360px) {
+    .card {
+        top: 2rem;
+        width: 330px;
+    }
+
+    .attribution {
+        top: 2rem;
+    }
+}
